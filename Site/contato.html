@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato & Matrícula — Harmonia Studio</title>
+  <meta name="description" content="Entre em contato com o Harmonia Studio em Sousa-PB. Tire suas dúvidas sobre aulas presenciais e online de música, consulte valores e agende sua visita.">
+  
+  <!-- Typography (Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/contato.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Rua das Melodias, 100, Centro — Sousa - PB</span>
+      </div>
+      <div class="top-bar-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <a href="tel:+558330000000">(83) 3000-0000</a>
+        <span style="opacity: 0.4;">|</span>
+        <a href="https://wa.me/5583900000000" target="_blank" rel="noopener">WhatsApp: (83) 90000-0000</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Harmonia Studio — Página Inicial">
+        <img src="assets/images/logo-harmonia.png" alt="Harmonia Studio — Escola de Música" class="brand-logo-img">
+      </a>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Navegação Principal">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="aulas.html" class="nav-link">Aulas</a>
+        <a href="sobre.html" class="nav-link">Sobre</a>
+        <a href="contato.html" class="nav-link active">Contato</a>
+        <div class="nav-menu-actions">
+          <a href="contato.html" class="btn btn-primary">Entre em contato</a>
+        </div>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contato.html" class="btn btn-primary">Entre em contato</a>
+      </div>
+
+      <button class="menu-toggle" aria-label="Abrir Menu de Navegação" aria-expanded="false" aria-controls="nav-menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="4" x2="20" y1="12" y2="12"/>
+          <line x1="4" x2="20" y1="6" y2="6"/>
+          <line x1="4" x2="20" y1="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header Banner -->
+    <section class="section" style="background-color: var(--color-obsidian); border-bottom: var(--border-hairline); padding-bottom: var(--spacing-48);">
+      <div class="container">
+        <span class="eyebrow">Fale Conosco</span>
+        <h1 class="section-title" style="font-size: var(--text-heading-lg);">Entre em contato</h1>
+        <p class="section-desc" style="font-size: 18px; max-width: 720px;">
+          Tem interesse em aprender música ou deseja conhecer melhor nossas modalidades? Envie sua mensagem pelo formulário abaixo. Nossa equipe poderá entrar em contato para fornecer mais informações.
+        </p>
+      </div>
+    </section>
+
+    <!-- Main Contact Section -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-layout">
+          <!-- Coluna 1: Formulário de Contato -->
+          <div class="contact-form-card">
+            <h2 class="contact-form-title">Envie sua mensagem</h2>
+            <p class="contact-form-subtitle">Preencha os campos abaixo para solicitar informações sobre vagas, horários e mensalidades.</p>
+
+            <!-- Alerts -->
+            <div id="alert-success" class="alert alert-success" role="alert">
+              Sua mensagem foi enviada com sucesso! Agradecemos pelo contato.
+            </div>
+            <div id="alert-error" class="alert alert-error" role="alert">
+              Não foi possível enviar sua mensagem. Verifique os campos e tente novamente.
+            </div>
+
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="nome" class="form-label">
+                  Nome completo <span class="required-mark">*</span>
+                </label>
+                <input type="text" id="nome" name="nome" class="form-input" placeholder="Ex: Ana Silva" required>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email" class="form-label">
+                    E-mail <span class="required-mark">*</span>
+                  </label>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="seuemail@exemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="telefone" class="form-label">
+                    Telefone / WhatsApp
+                  </label>
+                  <input type="tel" id="telefone" name="telefone" class="form-input" placeholder="(83) 90000-0000">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="formato" class="form-label">
+                    Formato de interesse
+                  </label>
+                  <select id="formato" name="formato" class="form-select">
+                    <option value="presencial">Presencial (Sousa-PB)</option>
+                    <option value="online">Online (Videochamada ao vivo)</option>
+                    <option value="indiferente">Tanto faz / A definir</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="modalidade" class="form-label">
+                    Modalidade de interesse
+                  </label>
+                  <select id="modalidade" name="modalidade" class="form-select">
+                    <option value="" disabled selected>Selecione uma modalidade</option>
+                    <option value="violao">Violão</option>
+                    <option value="guitarra">Guitarra</option>
+                    <option value="piano">Piano</option>
+                    <option value="teclado">Teclado</option>
+                    <option value="bateria">Bateria</option>
+                    <option value="contrabaixo">Contrabaixo</option>
+                    <option value="violino">Violino</option>
+                    <option value="canto">Canto</option>
+                    <option value="teoria">Teoria Musical</option>
+                    <option value="producao">Produção Musical</option>
+                    <option value="ainda-nao-decidi">Ainda não decidi</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="mensagem" class="form-label">
+                  Mensagem ou dúvida <span class="required-mark">*</span>
+                </label>
+                <textarea id="mensagem" name="mensagem" class="form-textarea" placeholder="Conte-nos se você já possui alguma experiência musical, seus horários preferenciais ou o que gostaria de aprender..." required></textarea>
+              </div>
+
+              <div style="margin-top: var(--spacing-24);">
+                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                  Enviar mensagem
+                </button>
+              </div>
+
+              <p style="font-size: var(--text-caption); color: var(--color-slate); margin-top: var(--spacing-16); text-align: center; line-height: 1.4;">
+                Seus dados serão utilizados apenas para responder sua solicitação de contato e fornecer informações da Harmonia Studio.
+              </p>
+            </form>
+          </div>
+
+          <!-- Coluna 2: Informações de Atendimento & Localização -->
+          <div class="contact-info-panel">
+            <!-- Canais Oficiais -->
+            <div class="contact-info-card">
+              <h4>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                Canais de Atendimento
+              </h4>
+
+              <div class="contact-channels-list">
+                <!-- WhatsApp -->
+                <div class="contact-channel-item">
+                  <div class="contact-channel-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                  </div>
+                  <div class="contact-channel-details">
+                    <span class="contact-channel-label">WhatsApp</span>
+                    <span class="contact-channel-val">
+                      <a href="https://wa.me/5583900000000" target="_blank" rel="noopener">(83) 90000-0000</a>
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Telefone -->
+                <div class="contact-channel-item">
+                  <div class="contact-channel-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  </div>
+                  <div class="contact-channel-details">
+                    <span class="contact-channel-label">Telefone Fixo</span>
+                    <span class="contact-channel-val">
+                      <a href="tel:+558330000000">(83) 3000-0000</a>
+                    </span>
+                  </div>
+                </div>
+
+                <!-- E-mail -->
+                <div class="contact-channel-item">
+                  <div class="contact-channel-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                  </div>
+                  <div class="contact-channel-details">
+                    <span class="contact-channel-label">E-mail Oficial</span>
+                    <span class="contact-channel-val">
+                      <a href="mailto:contato@harmoniastudio.com.br">contato@harmoniastudio.com.br</a>
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Instagram -->
+                <div class="contact-channel-item">
+                  <div class="contact-channel-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                  </div>
+                  <div class="contact-channel-details">
+                    <span class="contact-channel-label">Instagram</span>
+                    <span class="contact-channel-val">
+                      <a href="https://www.instagram.com/harmoniastudio/" target="_blank" rel="noopener">@harmoniastudio</a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Onde estamos & Localização -->
+            <div class="contact-info-card">
+              <h4>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                Onde estamos
+              </h4>
+              <p style="font-size: var(--text-body-sm); color: var(--color-platinum); margin-bottom: 4px; font-weight: 500;">
+                Rua das Melodias, nº 100
+              </p>
+              <p style="font-size: var(--text-body-sm); color: var(--color-fog); margin-bottom: var(--spacing-20);">
+                Centro — Sousa – PB
+              </p>
+
+              <!-- Localização Visual / Mapa Simulado -->
+              <div class="map-placeholder-box">
+                <div class="map-pin">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="map-details">
+                  <h5>Sousa, Paraíba</h5>
+                  <p>Centro da cidade • Fácil acesso</p>
+                </div>
+              </div>
+
+              <!-- Horários -->
+              <div style="margin-top: var(--spacing-24); padding-top: var(--spacing-16); border-top: 1px solid rgba(69, 70, 77, 0.3);">
+                <span class="contact-channel-label">Horários de Funcionamento</span>
+                <p style="font-size: var(--text-body-sm); color: var(--color-platinum); margin-top: 4px;">
+                  Segunda a Sexta: 08:00 às 21:00<br>
+                  Sábados: 08:00 às 14:00
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Shared Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="footer-logo" aria-label="Harmonia Studio — Página Inicial">
+            <img src="assets/images/logo-harmonia.png" alt="Harmonia Studio — Escola de Música" class="footer-logo-img">
+          </a>
+          <p class="footer-desc">
+            Escola de música dedicada ao ensino acolhedor e profissional em Sousa, Paraíba. Modalidades presenciais e online para todas as idades.
+          </p>
+        </div>
+
+        <div>
+          <h5 class="footer-col-title">Navegação</h5>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="aulas.html" class="footer-link">Aulas & Cursos</a></li>
+            <li><a href="sobre.html" class="footer-link">Sobre a Escola</a></li>
+            <li><a href="contato.html" class="footer-link">Contato & Matrícula</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="footer-col-title">Modalidades</h5>
+          <ul class="footer-links">
+            <li><a href="aulas.html#cordas" class="footer-link">Violão & Guitarra</a></li>
+            <li><a href="aulas.html#teclas" class="footer-link">Piano & Teclado</a></li>
+            <li><a href="aulas.html#teclas" class="footer-link">Bateria</a></li>
+            <li><a href="aulas.html#voz" class="footer-link">Canto & Técnica Vocal</a></li>
+            <li><a href="aulas.html#voz" class="footer-link">Teoria & Produção</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="footer-col-title">Atendimento</h5>
+          <ul class="footer-links">
+            <li class="footer-link">Rua das Melodias, nº 100, Centro</li>
+            <li class="footer-link">Sousa – PB</li>
+            <li><a href="tel:+558330000000" class="footer-link">(83) 3000-0000</a></li>
+            <li><a href="https://wa.me/5583900000000" target="_blank" rel="noopener" class="footer-link">WhatsApp: (83) 90000-0000</a></li>
+            <li><a href="mailto:contato@harmoniastudio.com.br" class="footer-link">contato@harmoniastudio.com.br</a></li>
+            <li><a href="https://www.instagram.com/harmoniastudio/" target="_blank" rel="noopener" class="footer-link">@harmoniastudio</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Harmonia Studio. Todos os direitos reservados. Projeto acadêmico demonstrativo.
+        </div>
+        <div>
+          <span>Sousa – Paraíba (PB)</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>

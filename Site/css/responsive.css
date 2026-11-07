@@ -1,0 +1,118 @@
+/* Responsive Breakpoints & Adaptations */
+
+@media (max-width: 1024px) {
+  :root {
+    --section-gap: 64px;
+    --text-display: 44px;
+    --text-heading-lg: 38px;
+    --text-heading: 30px;
+  }
+
+  .about-preview-grid,
+  .about-intro-grid,
+  .pricing-teaser-card,
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-40);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-32);
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-gap: 48px;
+    --text-display: 34px;
+    --text-heading-lg: 30px;
+    --text-heading: 26px;
+    --text-heading-sm: 22px;
+  }
+
+  .top-bar {
+    display: none; /* Hide top bar on mobile for cleaner viewport */
+  }
+
+  .brand-logo-img {
+    height: 40px;
+    max-width: 110px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    max-height: calc(100vh - 72px);
+    overflow-y: auto;
+    background-color: var(--color-obsidian);
+    border-bottom: var(--border-hairline);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: var(--spacing-24);
+    gap: var(--spacing-16);
+    transform: translateY(-150%);
+    opacity: 0;
+    pointer-events: none;
+    transition: all var(--transition-normal);
+    z-index: 999;
+  }
+
+  .nav-menu.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-link {
+    width: 100%;
+    font-size: 16px;
+    padding: var(--spacing-12) 0;
+    border-bottom: 1px solid rgba(69, 70, 77, 0.2);
+  }
+
+  .nav-actions {
+    display: none; /* Accessible in the mobile drawer */
+  }
+
+  .nav-menu-actions {
+    display: flex;
+    width: 100%;
+    margin-top: var(--spacing-16);
+  }
+
+  .nav-menu-actions .btn {
+    width: 100%;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-16);
+  }
+
+  .form-row,
+  .about-values-list,
+  .formats-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-32);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-form-card {
+    padding: var(--spacing-24);
+  }
+}

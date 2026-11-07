@@ -1,0 +1,96 @@
+:root {
+  /* Colors - Splice / Midnight Recording Studio */
+  --color-signal-blue: #528fff;
+  --color-button-blue: #1253ff;
+  --color-button-blue-hover: #0b40cc;
+  --color-voltage-yellow: #f1f607;
+  --color-carbon: #121214;
+  --color-obsidian: #000000;
+  --color-platinum: #ffffff;
+  --color-graphite: #232426;
+  --color-fog: #a6a8ad;
+  --color-ash: #c8c9cc;
+  --color-slate: #63656d;
+  --color-iron: #45464d;
+  --color-iron-light: #5a5c65;
+
+  /* Surfaces */
+  --surface-graphite-canvas: #232426;
+  --surface-carbon: #121214;
+  --surface-obsidian: #000000;
+  --surface-iron: #45464d;
+  --surface-overlay: rgba(18, 18, 20, 0.75);
+
+  /* Typography */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-display: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  /* Font Scale & Rhythm */
+  --text-caption: 12px;
+  --leading-caption: 1.2;
+  --tracking-caption: -0.18px;
+
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.43;
+  --tracking-body-sm: -0.21px;
+
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --tracking-body: -0.24px;
+
+  --text-subheading: 20px;
+  --leading-subheading: 1.25;
+  --tracking-subheading: -0.3px;
+
+  --text-heading-sm: 28px;
+  --leading-heading-sm: 1.25;
+  --tracking-heading-sm: -0.42px;
+
+  --text-heading: 36px;
+  --leading-heading: 1.25;
+  --tracking-heading: -0.54px;
+
+  --text-heading-lg: 48px;
+  --leading-heading-lg: 1.2;
+  --tracking-heading-lg: -0.72px;
+
+  --text-display: 56px;
+  --leading-display: 1.15;
+  --tracking-display: -0.81px;
+
+  /* Eyebrow pattern (0.071em tracking uppercase) */
+  --tracking-eyebrow: 0.071em;
+
+  /* Spacing Scale (4px base) */
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-120: 120px;
+
+  /* Border Radii */
+  --radius-cards: 4px;
+  --radius-images: 4px;
+  --radius-inputs: 4px;
+  --radius-buttons: 8px;
+  --radius-pill-buttons: 60px;
+  --radius-nav: 1440px;
+
+  /* Elevation - Intentionally flat */
+  --shadow-subtle: rgba(0, 0, 0, 0.07) 0px 0px 0px 1px inset;
+  --border-hairline: 1px solid var(--color-iron);
+  --border-subtle: 1px solid rgba(69, 70, 77, 0.6);
+
+  /* Layout */
+  --container-max-width: 1200px;
+  --section-gap: 80px;
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+}
